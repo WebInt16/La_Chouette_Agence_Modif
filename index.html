@@ -38,11 +38,7 @@
 		<link rel="stylesheet" type="text/css" href="font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="et-line.css">
 		<link rel="stylesheet" href="normalize.css" />
-		<script src="js/jquery-2.1.0.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/blocs.js"></script>
-		<script src="js/jquery.touchSwipe.js" defer></script>
-		<script src="js/gmaps.js"></script>
+		
 		
 		
 		
@@ -259,35 +255,54 @@
 			<!-- Footer - bloc-8 END -->
 		</div>
 		<!-- Principal conteneur END -->
-		<script>$(window).scroll(function() {
-    if ($(window).scrollTop() == 0) {
-        $('#scrollToTop').fadeOut("fast");
-    } else {
-        if ($('#scrollToTop').length == 0) {
-            $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
-        }
-        $('#scrollToTop').fadeIn("fast");
-    }
-});
+        <script src="jquery-2.1.0.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="blocs.js"></script>
+		<script src="jquery.touchSwipe.js" defer></script>
+		<script src="gmaps.js"></script>
+		
+		<script>
+		<!-- ----scrolltotop---- -->
+		$(window).scroll(function() {
+		    if ($(window).scrollTop() == 0) {
+		        $('#scrollToTop').fadeOut("fast");
+		    } else {
+		        if ($('#scrollToTop').length == 0) {
+		            $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
+		        }
+		        $('#scrollToTop').fadeIn("fast");
+		    }
+		});
  
-$(document).ready(function() {
-    $('body').on('click', '#scrollToTop a', function(event) {
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 'slow');
-    });
-});
-$(document).ready(function(){
-  $('#button').button();
+		$(document).ready(function() {
+		    $('body').on('click', '#scrollToTop a', function(event) {
+		        event.preventDefault();
+		        $('html,body').animate({
+		            scrollTop: 0
+		        }, 'slow');
+		    });
+		});
+		$(document).ready(function(){
+		  $('#button').button();
 
-  $('#button').click(function() {
-    $(this).button('loading');
-  });  
-});
-</script>
+		  $('#button').click(function() {
+		    $(this).button('loading');
+		  });  
+		});
+			// ---touchSwipe---
+			$(function() {
+			  $("#test").swipe( {
+			    //Generic swipe handler for all directions
+			    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+			      $(this).text("You swiped " + direction );  
+			    }
+			  });
+
+			  //Set some options later
+			  $("#test").swipe( {fingers:2} );
+			});
 		<!-- Google analytic -->
-		<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
