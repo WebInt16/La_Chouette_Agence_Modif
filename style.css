@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
      font-family:"icomoon";
      src: url('fonts/icomoon.eot');
@@ -7,8 +14,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+     font-family:"et-line";
+     src: url('fonts/et-line.eot');
+     src: url("fonts/et-line.eot?#iefix") format("embedded-opentype"), url("fonts/et-line.woff")
+    format("woff"), url("fonts/et-line.ttf") format("truetype"), url("fonts/et-line.svg#icomoon")
+    format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
- }
 
 body
 {
@@ -26,6 +41,8 @@ body
 a,
 button
 {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     outline: none!important;
@@ -73,10 +90,7 @@ h2
     padding: 0 50px;
 
     background: 50% 50% no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 .bloc .container
@@ -111,10 +125,7 @@ h2
 .bg-br-edge,
 .bg-repeat
 {
-    -webkit-background-size: auto!important;
-       -moz-background-size: auto!important;
-         -o-background-size: auto!important;
-            background-size: auto!important;
+    background-size: auto!important;
 }
 
 .bg-repeat
@@ -387,7 +398,11 @@ h2
     margin-bottom: 0;
     padding: 2rem 1rem;
 
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+
+        -ms-flex-pack: start;
+
+            justify-content: flex-start;
 }
 
 .navbar-brand
@@ -430,7 +445,10 @@ h2
 }
 .navbar-nav
 {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .nav > li
@@ -580,7 +598,8 @@ button
 {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+            box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
 }
 
@@ -624,7 +643,8 @@ button
 .form-control
 {
     border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .scrollToTop
@@ -633,6 +653,8 @@ button
     z-index: 500;
     right: 60px;
     bottom: 60px;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
 
     opacity: 0;
@@ -641,7 +663,8 @@ button
     width:40px;
     border-radius: 50%;
     border: 1px solid #EBF3A6;
-    box-shadow: 3px 2px 0 #A6A0A3;
+    -webkit-box-shadow: 3px 2px 0 #A6A0A3;
+            box-shadow: 3px 2px 0 #A6A0A3;
     opacity: 1;
 }
 .scrollToTop span
@@ -681,7 +704,8 @@ a[data-lightbox]:hover::before
 
     content: '+';
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
 
     color: #fff;
     border-radius: 50%;
@@ -698,9 +722,15 @@ a[data-lightbox]:hover img
 
 #lightbox-modal
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
 }
 
 #lightbox-modal .modal-dialog
@@ -763,6 +793,10 @@ a[data-lightbox]:hover img
     position: absolute;
     z-index: 1;
     top: 45%;
+
+    -webkit-transition: all .2s ease-in-out;
+
+    -o-transition: all .2s ease-in-out;
 
     transition: all .2s ease-in-out;
 
@@ -877,7 +911,8 @@ p
 {
     max-width: 400px;
     margin: auto auto auto auto;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 15px;
 }
 
@@ -903,7 +938,8 @@ h3
     margin: auto auto auto auto;
 
     border: 1px solid orange;
-    box-shadow: 1px 1px 1px #000;
+    -webkit-box-shadow: 1px 1px 1px #000;
+            box-shadow: 1px 1px 1px #000;
 }
 
 h1
@@ -940,7 +976,8 @@ h4
 
 .avatar
 {
-    box-shadow: 0 4px 9px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, .3);
+            box-shadow: 0 4px 9px rgba(0, 0, 0, .3);
 }
 
 .black-background
@@ -1128,7 +1165,8 @@ h4
         right: 20px;
 
         -webkit-transform: translateY(-50%);
-                transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover
