@@ -1,0 +1,19 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/cookies",
+    "test/geolocation",
+    "test/htmlimports",
+    "test/json",
+    "test/svg",
+    "test/css/backgroundposition-xy",
+    "test/css/boxsizing",
+    "test/css/flexbox",
+    "test/css/fontface",
+    "test/css/mediaqueries",
+    "test/img/jpeg2000"
+  ]
+}
