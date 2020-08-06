@@ -1,9 +1,9 @@
-/*
+
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
-*/
+
 
 @font-face {
      font-family:"icomoon";
@@ -35,9 +35,17 @@ body
     background: #fff;
 
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: grayscale;
 }
 
+/*.button.btn.acess{
+    margin: 0 auto;
+}
+.accessibility, .accessibility :not(svg) {
+    color: #fff !important;
+    background-color: #999999 !important;
+    filter: none !important;
+}*/
 a,
 button
 {
@@ -379,12 +387,12 @@ h2
 }
 .row .voffset-lg .med-width-whitespace{
     -webkit-flex-wrap:wrap;
-    /*display: -webkit-box;*/
-   /* display: -ms-flexbox;
-    display: flex;*/
-    /*-webkit-box-pack: nowrap;*/
+    display: -webkit-box;
    
     }
+.med-width-whitespace{
+    display: -webkit-box;
+}
 
 #bloc-1-hero h1
 {
@@ -940,6 +948,7 @@ h3
     border: 1px solid orange;
     -webkit-box-shadow: 1px 1px 1px #000;
             box-shadow: 1px 1px 1px #000;
+    display: -webkit-box;
 }
 
 h1
@@ -973,7 +982,11 @@ h4
     margin-top: 50px;
     margin-bottom: 44px;
 }
-
+.portfolio-link {
+    max-width: 270px;
+    margin: 0 auto;
+    }
+    
 .avatar
 {
     -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, .3);
@@ -996,7 +1009,7 @@ h4
 
 .bgc-white
 {
-    background-color: #fff;
+    background-color: #F1F4FD;
 }
 
 .bgc-dark-slate-blue
@@ -1006,7 +1019,7 @@ h4
 
 .bgc-atomic-tangerine
 {
-    background-color: #f3976c;
+    background-color: #D96D6D;
 }
 
 .tc-white
@@ -1016,8 +1029,8 @@ h4
 
 .btn-atomic-tangerine
 {
-    color: #fff!important;
-    background: #f3976c;
+    color: #F1F4FD;
+    background: #D96D6D;
 }
 
 .btn-atomic-tangerine:hover
@@ -1307,9 +1320,6 @@ h4
         -webkit-box-shadow: none;
                 box-shadow: none;
     }
-    .collapse:not(.show){
-        display:block;
-    }
     .navbar-brand img
     {
         width: auto;
@@ -1394,17 +1404,10 @@ h4
         width: 180px;
         height: 320px;
     }
+    
 }
 
 
-
-@media (max-width: 767px)
-{
-    .bloc-mob-center-text
-    {
-        text-align: center;
-    }
-}
 @media (max-width: 400px)
 {
     .bloc
