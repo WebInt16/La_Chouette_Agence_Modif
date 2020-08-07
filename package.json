@@ -1,0 +1,19 @@
+{
+  "name": "la_chouette_agence_modif",
+  "version": "1.0.0",
+  "description": "Modification effectués pour que la maquette fonctionne comme un site",
+  "main": "blocs.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebInt16/La_Chouette_Agence_Modif.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebInt16/La_Chouette_Agence_Modif/issues"
+  },
+  "homepage": "https://github.com/WebInt16/La_Chouette_Agence_Modif#readme"
+}
