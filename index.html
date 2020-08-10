@@ -13,9 +13,9 @@
 		<link rel="canonical" href="https://webint16.github.io/La_Chouette_Agence_Modif/index.html">
 		<!----favicon---->
 		<link rel="shortcut icon" type="image/png" href="favicon.png" title="favicon">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
@@ -28,17 +28,16 @@
 		<meta name="twitter:title" content="La Chouette Agence">
 		<meta name="twitter:image" content="https://github.com/WebInt16/La_Chouette_Agence_Modif/blob/master/img/la-chouette-agence.png">
 		<meta name="twitter:card" content="summary_large_image">
+
 		<!----bootstrap et autre---->
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 		<link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="style.min.css" />
 		<link rel="stylesheet" type="text/css" href="font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="et-line.min.css" />
-		<link href="lightbox.css" rel="stylesheet" />
-		<link rel="stylesheet" href="normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="normalize.min.css" />
 
 		
 		
@@ -213,7 +212,7 @@
 										<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 									</div>
 								</div>
-								<a href="#" title="top"><span class="scrollToTop"><img src="favicon.png" alt="la chouette agence'logo"></span></a>
+								<a href="#" ><span class="scrollToTop"><img src="favicon.png" alt="la chouette agence'logo" title="toplogo"></span></a>
 							</div>
 						</div>
 					</div>
@@ -247,7 +246,6 @@
 										</div>
 									</div>
 								</div>
-								
 							</div>
 						</div>
 					</div>
@@ -255,17 +253,18 @@
 			</footer>
 			
 		</div>
-		<!-- Principal conteneur END -->
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/965757b03a.js" crossorigin="anonymous"></script>
-		<script src="bootstrap.min.js" defer></script>
-		<script src="blocs.min.js" async></script>
-		<script src="jquery.touchSwipe.min.js" async></script>
-		<script src="gmaps.min.js" defer></script>
-		<script src="https://maps.google.com/maps/api/js" defer></script>
-		<script src="lightbox.js"></script>
-		<script src="lazysizes.min.js" async></script>
+		<script src="js/bootstrap.min.js" defer></script>
+		<script src="js/jqBootstrapValidation.min.jss"></script>
+		<script src="js/formHandler.min.js" defer></script>
+		<script src="js/blocs.min.js" defer></script>
+		<script src="js/jquery.touchSwipe.min.js" defer></script>
+		<script src="js/lightbox.js" defer></script>
+		<script src="js/lazysizes.min.js" async></script>
+
+
 		<script>
 
 		// <!-- ----scrolltotop---- -->
@@ -305,12 +304,7 @@
 		//Set some options later
 		$("#test").swipe( {fingers:2} );
 		});
-		//Modernizer
-		if (Modernizr.awesomeNewFeature) {
-		showOffAwesomeNewFeature();
-		} else {
-		getTheOldLameExperience();
-		}
+	
 		
 		// <!-- Google analytic -->
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
